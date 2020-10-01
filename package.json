@@ -1,0 +1,28 @@
+{
+  "name": "subtle",
+  "version": "1.0.0",
+  "description": "just another link shortener",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gigabite-pro/subtle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gigabite-pro/subtle/issues"
+  },
+  "homepage": "https://github.com/gigabite-pro/subtle#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
