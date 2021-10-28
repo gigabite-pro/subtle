@@ -1,3 +1,11 @@
+
+
+const db = process.env.DB_URL;
+
+mongoose.connect(db, { useUnifiedTopology: true, useNewUrlParser: true })
+    .then(() => console.log('MongoDB Connected...'))
+    .catch(err => console.log(err))
+
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose')
@@ -9,6 +17,8 @@ require('dotenv').config();
 const PORT = process.env.PORT || 8000;
 
 
+
+app.use(express.static('public'));
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
 app.set('views', path.join(__dirname, 'views'));
