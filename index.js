@@ -24,6 +24,7 @@ app.get("/link", async (req,res)=>{
     mainId = "";
     mainUrl = "";
 })
+
 app.post("/shortUrls", async(req,res)=>{
     let id = await shortid.generate()
     mainId = id
@@ -43,6 +44,7 @@ app.get('/:shortUrl', async(req,res)=>{
 
     res.redirect(shortUrl.full)
 })
+
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`)
